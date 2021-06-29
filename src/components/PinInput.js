@@ -7,7 +7,7 @@ import '../App.css';
 export default function PinInput({setPin}) {
 const [inputsView,setInputsView] = useState('password')
 const [inputsViewConfirm,setInputsViewConfirm] = useState('password')
-const [success, setSuccess] = useState(false,'');
+
 
   useEffect(() => {
       const nextSibling = document.querySelector(`input[name='one']`);
@@ -15,8 +15,7 @@ const [success, setSuccess] = useState(false,'');
    });
 
 const handleChange = e => {
-  const { maxLength, value, name } = e.target;
-  const [fieldName, fieldIndex] = name.split("-");
+  const { name } = e.target;
     if (name === 'one') {
       const nextSibling = document.querySelector(`input[name='two']`);
       if (nextSibling !== null) {

@@ -8,7 +8,6 @@ function App() {
   const [id,setId] = useState('');
 
   return (
-
     route === 'Home' ?
     <Home defineRoute={(val)=>setRoute(val)}/> :
     ( route === 'CreateId' ?
@@ -18,8 +17,6 @@ function App() {
      <div className="App">
      <AddPin defineRoute={(val)=>setRoute(val)} id={id}/>
    </div>)
-
-
   );
 }
 

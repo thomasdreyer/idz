@@ -23,7 +23,8 @@ export default function Home({defineRoute}) {
        backgroundColor:'#61a188',
        border:'1px solid #61a188',
        color:'white',
-       borderRadius:3
+       borderRadius:3,
+       fontWeight:'bold',
       }}
      onClick={()=>defineRoute('CreateId')}>REGISTRATION</button>
     </div>
