@@ -1,7 +1,136 @@
-.App {
-  text-align: center;
+
+/* alatsi-regular - latin */
+@font-face {
+  font-family: 'Alatsi';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/alatsi-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/alatsi-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/alatsi-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/alatsi-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/alatsi-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/alatsi-v2-latin-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/open-sans-v20-latin-regular.woff'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./fonts/open-sans-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/open-sans-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/open-sans-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/open-sans-v20-latin-regular.svg#Alatsi') format('svg'); /* Legacy iOS */
+}
+
+.backBtn{
+  font-family:'Alatsi'
+}
+.field{
+  border:1px solid transparent;
+  background-color:white;
+  width:350px
+}
+.field:focus {
+  outline:none;
+}
+.regBtn{
+  font-family:'Alatsi';
+}
+.nextBtn{
+  font-family:'Alatsi';
+  width:300px;
+  height:40px;
+  background-color:#2B3136;
+  border:1px solid #2B3136;
+  color:white;
+  border-radius:3px;
+  cursor:pointer;
+  margin-top:100px;
+}
+.idInput{
+  display:flex;
+  flex-direction:row;
+  width:400px;
+  border-bottom:1px solid black;
+  padding-bottom:5px;
+}
+.App {
+  display:flex;
+   height:100vh;
+   width:100%;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   font-family:'OpenSans';
+}
+.container {
+  display:flex;
+   height:100%;
+   width:100%;
+   flex-direction:column;
+   justify-content:flex-start;
+   align-items:center;
+}
+.header {
+  display:flex;
+   height:auto;
+   width:100%;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   margin-bottom:100px;
+   margin-top:20px;
+}
+
+.submitBtn{
+  display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+  width:40px;
+  height:40px;
+  border:1px solid transparent;
+  border-radius:20px;
+  background-color:lightgray;
+  cursor:pointer;
+}
+.error{
+  color:red;
+  font-size: 8px;
+  font-weight: bold;
+}
+.digitInput{
+  text-align:center;
+  width:18px;
+  height:26px;
+  font-size:30px;
+  padding:10px;
+  margin:6px;
+  border:1px solid gray;
+  border-radius:3px;
+}
+.success{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid green;
+  border-radius:20px;
+  width:300px;
+  height:300px;
+ padding:20px;
+ margin:40px;
+ -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +164,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
